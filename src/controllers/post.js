@@ -33,7 +33,7 @@ export const createPost = async (req, res, next) => {
 }
 
 //fetch posts
-export const geetFeedPost = async (res, res, next) => {
+export const geetFeedPost = async (req, res, next) => {
     try {
         const posts = await Post.find();
         return res.status(200).json(posts);
