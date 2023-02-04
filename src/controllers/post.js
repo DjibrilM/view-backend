@@ -3,6 +3,7 @@ import User from "../models/user.js";
 User
 
 
+
 export const createPost = async (req, res, next) => {
     try {
         const { userId, description } = req.body;
